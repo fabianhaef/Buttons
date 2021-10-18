@@ -5,11 +5,12 @@
 @import url('./button-primary.css');
 @import url('./button-secondary.css');
 @import url('./button-background-slide.css');
+@import url('./button-background-slide-in-out.css');
 @import url('./button-grow.css');
 @import url('./loading-spinner.css');
 @import url('./button-move-sideways.css');
 @import url('./button-underline-on-hover.css');
-@import url('./button-background-slide-inout.css');
+@import url('./button-underline-inout.css');
 
 
 :root {
@@ -40,6 +41,38 @@ a:hover {
   transition: .3s;
 }
 
+footer {
+  margin-top: 12rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.fancy-link {
+  text-align: center;
+}
+
+.fancy-link::after {
+  content: '';
+  position: absolute;
+  left: calc(50% - 55px);
+  bottom: 0;
+  width: 110px;
+  height: 4px;
+  background: #333399;
+}
+
+.fancy-link:hover::after {
+  content: '';
+  position: absolute;
+  left: calc(50% - 55px);
+  bottom: 0;
+  width: 110px;
+  height: 2px;
+  background: #4444b8;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: bold;
@@ -58,12 +91,6 @@ h2 {
 
 p {
   color: var(--gray);
-}
-
-footer {
-  margin-top: 12rem;
-  text-align: center;
-
 }
 
 .main-content {
@@ -105,3 +132,4 @@ button {
   cursor: pointer;
   border: 1px solid transparent;
 }
+

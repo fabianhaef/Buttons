@@ -1,0 +1,28 @@
+.button-background-slide-in-out {
+  background-color: var(--background);
+  z-index: 1;
+
+  display: inline-block;
+  position: relative;
+}
+
+.button-background-slide-in-out::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #333399;
+  z-index: -1;
+  border: 1px solid transparent;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease-in;
+}
+
+.button-background-slide-in-out:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
