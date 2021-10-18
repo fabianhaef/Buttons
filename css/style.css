@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url('./button-underline.css');
+@import url('./button-underline-up.css');
+@import url('./button-border-bottom.css');
+@import url('./button-primary.css');
+@import url('./button-secondary.css');
+@import url('./button-background-slide.css');
+@import url('./button-grow.css');
+@import url('./loading-spinner.css');
+@import url('./button-move-sideways.css');
+@import url('./button-underline-on-hover.css');
+@import url('./button-background-slide-inout.css');
+
+
+:root {
+  --background: #222222;
+  --background-light: #2F2F2F;
+  --white: #fcfcfc;
+  --gray: #C0C0C0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: var(--background);
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+a:hover {
+  color: var(--white);
+  transition: .3s;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(0deg, #FF00CC 0%, #333399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+p {
+  color: var(--gray);
+}
+
+footer {
+  margin-top: 12rem;
+  text-align: center;
+
+}
+
+.main-content {
+  padding: 2rem 25rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.button-container {
+  background: var(--background-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+  border: 1px solid transparent;
+}

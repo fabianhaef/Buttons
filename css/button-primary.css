@@ -1,0 +1,8 @@
+.button-primary {
+  background: #333399;
+}
+
+.button-primary:hover {
+  background: #4444b8;
+  transition: 0.3s ease-in;
+}

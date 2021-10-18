@@ -1,0 +1,12 @@
+.button-border-bottom {
+  background: #333399;
+
+  display: inline-block;
+  position: relative;
+}
+
+.button-border-bottom:hover {
+  border-bottom: 4px solid #18188D;
+  transition: 0.2s ease-in;
+  margin-bottom: -3px;
+}

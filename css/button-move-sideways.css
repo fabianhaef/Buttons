@@ -1,0 +1,18 @@
+.button-move-sideways {
+  background: transparent;
+}
+
+.button-move-sideways:hover {
+  animation: 2s move infinite ease-in-out;
+}
+
+@keyframes move {
+  25% {
+    transform: translateX(-12px);
+  }
+
+
+  75% {
+    transform: translateX(12px);
+  }
+}

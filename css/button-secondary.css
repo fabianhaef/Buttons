@@ -1,0 +1,9 @@
+.button-secondary {
+  background: transparent;
+  border: 1px solid #333399;
+}
+
+.button-secondary:hover {
+  background: rgba(68, 68, 184, 0.3);
+  transition: 0.3s ease-in;
+}
